@@ -14,7 +14,7 @@ The repository is structured sequentially to take a robot from raw thermodynamic
 * **`Joule heating for SMA wire.pdf`**: Establishes the governing electro-thermal differential equations, incorporating sensible heat storage, Joule heating inputs, and passive environmental convective dissipation.
 
 ### 2. Trajectory Generation & Data Extraction
-* **`jouleheating.slx`**: Isolated Simulink plant model used to verify baseline transient thermal responses. Implements a closed-loop PID controller regulating a 12V/6V PWM duty cycle against convective heat losses.
+* **`StandAloneJouleHeatingSystem.slx`**: Isolated Simulink plant model used to verify baseline transient thermal responses. Implements a closed-loop PID controller regulating a 12V/6V PWM duty cycle against convective heat losses.
 
 ### 3. Dynamics & Identification
-* **`FinalShapewithjouleheating.slx`**: The fully integrated multi-physics system. Incorporates metallurgical latent heat of transformation enthalpy into the plant dynamics to model material buffering. Features a feedforward lookup table that translates reference curvature trajectories into explicit temperature targets to eliminate feedback loop phase confusion.
+* **`FeedForwardControllerAndTheJouleHeatingSystem.slx`**: The fully integrated multi-physics system. Incorporates metallurgical latent heat of transformation enthalpy into the plant dynamics to model material buffering. Features a feedforward lookup table that translates reference curvature trajectories into explicit temperature targets to eliminate feedback loop phase confusion.
