@@ -14,22 +14,22 @@ While idealized models treat temperature as a direct input signal, real-world Sh
 This project bridges the gap between material theory and hardware reality by developing an end-to-end **electro-thermal modeling and feedforward control framework**. The system models the complete energy balance—balancing electrical power inputs ($I^2R$) against transient sensible heat storage, latent heat enthalpy blocks, and ambient convective dissipation. By integrating this high-fidelity plant model with a path-dependent feedforward controller driven by pre-extracted First-Order Reversal Curve (FORC) lookup arrays, the architecture maps curvature targets into explicit current/voltage commands. This completely eliminates feedback phase confusion and mitigates the destructive lag of physical thermal buffering.
 
 <img width="1160" height="716" alt="Standalone" src="https://github.com/user-attachments/assets/2f0fc0fb-2d97-478a-bfd4-cf67dc26fd26" />
-Figure 1 A standalone Joule heating system as seperated system before the intgeration with the FORC extraced look up tables controller 
+Figure 1 A standalone Joule heating system for testing and verification. 
 
 
 <img width="1000" height="650" alt="GovereningEquations" src="https://github.com/user-attachments/assets/19ed0761-81bd-4f45-9ed4-4920bfbb1093" />
-Figure 2 The governing equations of the electro-thermal system
+Figure 2 The governing equations of the electro-thermal system.
 
 
 <img width="1917" height="926" alt="StandAloneJouleHeatingResponse" src="https://github.com/user-attachments/assets/78e48add-3863-4fc5-b1c8-328384d5fb1a" />
-Figure 3 The behavior analysis of the standalone Joule heating system
+Figure 3 The behavior analysis of the standalone Joule heating system.
 
 <img width="1745" height="597" alt="image" src="https://github.com/user-attachments/assets/94111f12-9cfc-44a4-b92a-cf780afbab5e" />
-Figure 4 FeedForward Configuration with thr integeration of the joule heating system
+Figure 4 the Feedforward configuration with the Joule heating system.
 
 
 <img width="1885" height="890" alt="FeedRes" src="https://github.com/user-attachments/assets/e49a5930-0c3a-4246-8efe-1365afeec24d" />
-Figure 5 The behavior analysis of the system
+Figure 5 The behavior analysis of the overall system.
 
 
 
